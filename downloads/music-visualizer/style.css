@@ -1,0 +1,60 @@
+body {
+  overflow: hidden;
+  margin: 0;
+mix-blend-mode:screen;
+  background: linear-gradient(#07279b,black,black);
+}
+
+button {
+  font-family:monospace;
+  background-color: black;
+  border:green;
+  color: magenta;
+  font-size: 20px;
+  z-index: 1;
+  display: inline;
+}
+
+
+
+.bg {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index: -1;
+  background: linear-gradient(#07279b,black,black);
+  background-size:8px 8px;
+  background-position: 0;
+  animation: bg 1s infinite linear;
+  z-index: -1;
+
+}
+
+.wrap {
+  mix-blend-mode:overlay;
+   position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-image: linear-gradient(180deg,
+  	#223 25%, #450 25%, #410 50%,
+  	#230 50%, #210 75%, #200 75%, #190);
+  z-index: -1;
+  
+}
+
+@keyframes bg {
+  0%{
+    background-position: 0 0;
+  }
+  100%{background-position: 8px 8px;}  
+  
+}
+
+.realwrap{
+  position: absolute;
+  bottom: 0px;
+}

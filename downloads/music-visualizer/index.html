@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>retro music visualizer</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="bg"></div><div class="wrap"></div>
+
+<div class="realwrap">
+<button onmousedown="btn1()">1</button>
+<button onmousedown="btn2()">2</button>
+<button onmousedown="btn3()">3</button>
+<!--button onmousedown="btn4()">4</button-->
+<button class="play" onmousedown="playAudio()">play</button>
+<audio controls></audio>
+  <input class="input-file" type="file" id="file" accept="audio/*"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.min.js'></script>
+<script src='https://dl.dropboxusercontent.com/s/68s49o4j3jpjb1s/OrbitControls.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
